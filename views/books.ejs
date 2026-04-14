@@ -3,7 +3,7 @@
 <head>
 <title>Book List</title>
   <!-- Connect your JavaScript here -->
-<script src="..." defer></script>
+<script src="script.js" defer></script>
 
 <style>
   .book-box {
@@ -18,13 +18,17 @@
   <h2>Create New Book</h2>
   <!-- Complete the form based on the Book schema -->
   <form>
-    <label>Title: </label>
-    <input type="..." name="..." />
+    <label>Title: </label> <br>
+    <input type="text" name="title" /> <br>
+
+    <label>Author: </label> <br>
+    <input type="text" name="author" /> <br>
+
+    <label>Published: </label> <br>
+    <input type="number" name="published" /> <br>
 
     <!-- Add the rest of the Book attributes -->
-
-
-    <button type="...">Submit</button>
+    <button type="submit">Submit</button>
   </form>
 
   <h1>List of Books</h1>

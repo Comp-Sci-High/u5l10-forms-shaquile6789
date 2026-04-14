@@ -28,7 +28,14 @@ app.get("/", async (req, res) => {
 
 // Write a POST route that creates a new book document
 
-
+app.post('/new/book', async (req, res) =>{
+    const newBook = await new Book({
+        title: req.body.title,
+        author: req.body.author,
+        published: req.body.published
+    }).save()
+    res.json(newBook)
+})
 
 
 async function startServer() {
